@@ -63,11 +63,6 @@ proposals = {}
 # Gale-Shapley Algorithm Code.
 while free_residents: 
     resident = free_residents.pop(0) 
-Instructor
-| 02/07 at 2:04 pm
-Grading comment:
-This takes $n$ time and the while loop executes $n^2$ times. Hence this line takes a total of $n^3$.
-
     preferences = residents[resident] 
     if resident not in proposals: 
         proposals[resident] = 0 
